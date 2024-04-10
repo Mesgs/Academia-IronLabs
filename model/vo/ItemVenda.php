@@ -10,7 +10,7 @@
  *
  * @author Aluno
  */
-class ItmVenda {
+class ItemVenda {
     private $id;
     private $precoUnitario;
     private $quantidade;
@@ -57,6 +57,8 @@ class ItmVenda {
         $this->idProduto = $idProduto;
     }
 
-
+    function toString(){
+        return $this->precoUnitario;
+    }
     
 }
